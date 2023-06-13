@@ -1,7 +1,7 @@
 ---
 - hosts: webservice
   become: yes
-  become_user: freemem
+  become_user: {{ sys_user }}
   gather_facts: no
 
   tasks:
@@ -18,7 +18,7 @@
 
 - hosts: webservice
   become: yes
-  become_user: freemem
+  become_user: {{ sys_user }}
   gather_facts: no
   environment:
     DJANGO_SETTINGS_MODULE: "{{ django_project }}.settings.production"
