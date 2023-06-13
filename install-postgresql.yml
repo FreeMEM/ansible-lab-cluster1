@@ -1,3 +1,4 @@
+---
 # Playbook para instalar postgresql
 - hosts: databases
   remote_user: freemem
