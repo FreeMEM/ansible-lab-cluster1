@@ -1,0 +1,9 @@
+# Playbook para instalar postgresql
+- hosts: databases
+  remote_user: freemem
+  become: yes
+  tasks:
+    - name: install postgres
+      apt:
+        name: postgresql 
+        state: latest
