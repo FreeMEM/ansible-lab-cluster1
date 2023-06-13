@@ -1,4 +1,5 @@
-# Playbook para instalar postgresql
+---
+# Playbook para comprobar que esté levantado postgresql
 - hosts: databases
   remote_user: freemem
   become: yes
